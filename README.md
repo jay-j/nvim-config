@@ -2,15 +2,11 @@
 Comment
 : Has to do with smarter commenting. Uses treesitter file comprehension. Keyboard shortcut `gcc` is supposed to comment a file but it gives me a crazy long error. 
 
-- how to go to the definition of a function that's in a different file? 
-
-# TODO
-- implement two faster ways to search via `:grep -Ir "string" *`. There is a `:cw` and panel system. But maybe it gets confusing when the bottom panel is already open? 
-- one that gets the currently selected word. `gs` for go to search. 
-- the other where I can type in whatever I want
 
 # Keyboard Shortcuts
-- goto file named under cursor `gf`
+- goto definition in the same file `gd`.
+- goto file named under cursor `gf`.
+- global-down search for word under cursor `gs` (via `:grep -Ir "string" *`)
 - switch to another open buffer `<Space> b`.
 - `*` / `#` initiate search for next/previous instance of word under cursor.
 - `123G` goto line 123.

@@ -48,3 +48,6 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Searches! --
+keymap("n", "gs", ":grep -Ir <cword> * <CR><CR> :cw <CR>", opts)
