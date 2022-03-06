@@ -4,6 +4,11 @@ Comment
 
 - how to go to the definition of a function that's in a different file? 
 
+# TODO
+- implement two faster ways to search via `:grep -Ir "string" *`. There is a `:cw` and panel system. But maybe it gets confusing when the bottom panel is already open? 
+- one that gets the currently selected word. `gs` for go to search. 
+- the other where I can type in whatever I want
+
 # Keyboard Shortcuts
 - goto file named under cursor `gf`
 - switch to another open buffer `<Space> b`.
