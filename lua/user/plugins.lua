@@ -43,12 +43,15 @@ return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
   -- TODO setup
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-tree.lua" -- file explorer
-  use "akinsho/bufferline.nvim" -- show buffers (open files) at the top
+  use {
+     "akinsho/bufferline.nvim",
+     branch = "main",
+  } -- show buffers (open files) at the top
   use "moll/vim-bbye" -- tweak to make nicer handling of buffers
   use "nvim-lualine/lualine.nvim" -- special statusline. can have mode, git info, filename, stuff..
   use "ahmedkhalf/project.nvim" -- groups of files as projects
